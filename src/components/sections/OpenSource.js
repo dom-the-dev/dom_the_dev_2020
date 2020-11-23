@@ -19,7 +19,7 @@ const OpenSource = props => {
 
 const renderProjects = projects => {
     return projects.map((project, index) => (
-        <OpenSourcePreview key={index} project={project.node} />
+        <OpenSourcePreview delay={100 * (index + 1)} key={index} project={project.node} />
     ))
 }
 

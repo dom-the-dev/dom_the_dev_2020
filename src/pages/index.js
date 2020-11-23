@@ -1,4 +1,5 @@
 import React from "react"
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import Layout from "../components/Layout"
 import Head from "../components/head"
@@ -18,8 +19,12 @@ const IndexPage = ({ data }) => {
       <Head page={"Home"} />
 
       <Intro />
-      <AboutDom />
-      <Skills />
+      <ScrollAnimation animateIn='bounceInRight' animateOut='bounceOutLeft'>
+        <AboutDom />
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="fadeIn">
+        <Skills />
+      </ScrollAnimation>
       <OpenSource openSource={data.allMarkdownRemark.edges} />
       <Projects />
       <Contact />

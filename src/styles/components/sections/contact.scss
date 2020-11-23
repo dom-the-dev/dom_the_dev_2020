@@ -3,14 +3,7 @@
         position: relative;
         width: 100%;
         color: $color-secondary;
-    }
-    
-    .dom-form__label {
-        position: absolute;
-        left: 10px;
-        top: 25px;
-        transition: transform 0.2s;
-        transform: translateY(-50%);
+        
     }
     
     .dom-form__textarea,
@@ -23,10 +16,37 @@
         height: 50px;
         outline: none;
         background-color: transparent;
+        color: $color-copy;
+        padding-top: 9px;
+    }
+
+    .dom-form__label {
+        position: absolute;
+        left: 10px;
+        top: 25px;
+        transition: transform 0.2s, top 0.2s, font-size 0.2s;
+        transform: translateY(-50%);
     }
     
     .dom-form__textarea {
-        padding-top: 10px;
+        padding-top: 15px;
         height: 250px;
+    }
+
+    .dom-form-message {
+        color: $color-secondary;
+        text-align: center;
+        margin: 20px;
+    }
+
+
+    .dom-form__textarea--active + .dom-form__label,
+    .dom-form__input--active + .dom-form__label,
+    .dom-form__textarea:active + .dom-form__label,
+    .dom-form__textarea:focus + .dom-form__label,
+    .dom-form__input:active + .dom-form__label,
+    .dom-form__input:focus + .dom-form__label {
+        font-size: 10px;
+        top: 10px;
     }
 }

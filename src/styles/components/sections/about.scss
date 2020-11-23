@@ -1,15 +1,35 @@
 .dom-about {
-    .dom-about__avatar {
-        // @include regularShadow;
-        border-radius: 5px;
-        margin: 0;
-    }
+
     .dom-about__headline {
         @include h4-title;
     }
     .dom-about__text {
         @include font-medium;
         color: $color-copy;
+    }
+
+    .dom-about__avatar {
+        position: relative;
+        float: right;
+        max-width: 100px;
+        margin-left: 20px;
+        border-radius: 50%;
+
+        
+    }
+
+    .dom-about__avatarWrapper {
+        position: relative;
+    }
+    .dom-about__avatarWrapper:before {
+        content: "That's me!";
+        position: absolute;
+        top: -25px;
+        right: -15px;
+        @include fontAmatic;
+        font-size: 20px;
+        font-weight: 700;
+        transform: rotate(15deg);
     }
 
     .dom-about__imageWrapper {

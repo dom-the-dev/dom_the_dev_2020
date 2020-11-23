@@ -14,16 +14,18 @@
     .dom-intro__headlinePrefix {
         color: $color-secondary;
         margin-bottom: 20px;
-        @include fontMono;
+        @include fontAmatic;
+        font-size: 22px;
+        font-weight: 700;
     }
 
     .dom-intro__subline {
         text-align: right;
         color: $color-secondary;
-        font-style: italic;
         margin-top: -30px;
         margin-bottom: 40px;
         @include font-xlarge;
+        @include fontAmatic;
     }
 
     .dom-intro__text {

@@ -25,6 +25,18 @@ $font-dir: "../fonts/";
 
 
 @font-face {
+    font-family: "Amatic";
+    src: url($font-dir+"Amatic_SC/AmaticSC-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Amatic";
+    src: url($font-dir+"Amatic_SC/AmaticSC-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
     font-family: "RobotoMono";
     src: url($font-dir+"RobotoMono/RobotoMono-VariableFont_wght.ttf") format("truetype");
     font-weight: 400;
@@ -32,6 +44,7 @@ $font-dir: "../fonts/";
 
 $font-family-lato: Lato, "Helvetiva Neue", Helvetica, Arial, sans-serif;
 $font-family-robotoMono: RobotoMono, "Helvetiva Neue", Helvetica, Arial, sans-serif;
+$font-family-amatic: Amatic, "Helvetiva Neue", Helvetica, Arial, sans-serif;
 
 @mixin font-small {
     font-size: 12px;
@@ -111,4 +124,8 @@ $font-family-robotoMono: RobotoMono, "Helvetiva Neue", Helvetica, Arial, sans-se
 
 @mixin fontMono {
     font-family: $font-family-robotoMono;
+}
+
+@mixin fontAmatic {
+    font-family: $font-family-amatic;
 }

@@ -16,7 +16,14 @@ const AboutDom = props => {
                     <div className="col-12 col-md-10">
                         <div className="container">
                             <div className="row justify-content-center">
-                                <div className="col-12 col-md-7">
+                                <div className="col-12">
+                                    <div className={"dom-about__avatarWrapper"}>
+                                        <img
+                                            className={"dom-about__avatar"}
+                                            src={dom}
+                                            alt=""
+                                        />
+                                    </div>
                                     <h4 className={"dom-about__headline"}>
                                         Dom the dev
                                     </h4>
@@ -48,16 +55,6 @@ const AboutDom = props => {
                                     </p>
                                 </div>
 
-                                <div className="col-12 col-md-5">
-                                    <div className="dom-about__imageWrapper">
-                                        <img
-                                            className={"dom-about__avatar"}
-                                            src={dom}
-                                            alt=""
-                                        />
-                                        <div className="overlay" />
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

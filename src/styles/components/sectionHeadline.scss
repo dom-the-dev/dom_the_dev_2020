@@ -27,13 +27,16 @@
     .dom-sectionHeadline__title {
         color: $color-section-headline;
         text-transform: uppercase;
-        @include font-large;
+        @include font-xlarge;
         @include fontWider;
         font-weight: bold;
         display: inline;
         margin-right: 15px;
         margin-bottom: 0;
         // font-style: italic;
+
+        @include fontAmatic;
+        font-weight: 900;
 
         @include media-breakpoint-up(md) {
             margin-bottom: 24px;

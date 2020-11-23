@@ -1,4 +1,5 @@
 import React from "react"
+import "animate.css/animate.compat.css";
 
 import Footer from "./Footer"
 import Header from "./Header"
