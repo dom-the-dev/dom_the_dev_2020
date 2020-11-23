@@ -1,0 +1,82 @@
+.dom-projects {
+    .dom-card {
+        margin-top: 30px;
+    }
+    
+    .dom-projects__image {
+        position: relative;
+        margin-top: -40px;
+
+        img {
+            border-radius: 5px;
+            @include regularShadow;
+        }
+
+        .img-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            border-radius: 5px;
+            background-color: rgba(19, 32, 43, 0.4);
+        }
+    }
+
+    .dom-projects__project {
+        @include media-breakpoint-down(sm) {
+            order: 2;
+        }
+    }
+
+    .dom-projects__imageWrapper {
+        @include media-breakpoint-down(sm) {
+            order: 1;
+        }
+    }
+
+    .dom-projects__info {
+        @include font-medium;
+        margin-bottom: 0;
+        color: $color-copy;
+    }
+
+    .dom-projects__openLink {
+        background-color: $color-orange;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 20px;
+        color: $color-dark;
+        position: absolute;
+        bottom: -25px;
+        right: 40px;
+        @include regularShadow;
+
+        &--left {
+            left: 40px;
+        }
+    }
+    .dom-projects__tags {
+        @include font-small;
+        font-family: $font-family-robotoMono;
+        padding: 2px 3px;
+        display: inline-block;
+        color: $color-copy-decent;
+    }
+
+    .dom-projects__title {
+        @include h4-title;
+    }
+
+    .dom-projects__text {
+        color: $color-copy-decent;
+    }
+
+    .dom-projects__subline {
+        margin: 40px 0;
+    }
+}

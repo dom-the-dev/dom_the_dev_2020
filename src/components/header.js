@@ -1,42 +1,20 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import logo from "../images/dom_the_dev_logo.png"
+import Navigation from "./Navigation"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+const Header = () => {
+    return (
+        <header className={"dom-header"}>
+            <div className="dom-header__wrapper">
+                <AnchorLink href="#start">
+                    <img src={logo} alt="dom-the-dev-logo" width={30} />
+                </AnchorLink>
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
+                <Navigation />
+            </div>
+        </header>
+    )
 }
 
 export default Header

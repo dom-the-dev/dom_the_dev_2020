@@ -1,0 +1,46 @@
+.dom-navigation {
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    transform: translateX(20%);
+    background-color: $color-dark;
+    padding: 25px;
+    list-style-type: none;
+
+    @include media-breakpoint-up(md) {
+        padding: 0;
+        position: static;
+        transform: translateX(0);
+        background-color: transparent;
+        display: flex;
+    }
+
+    li {
+        padding: 0;
+        margin: 0;
+        @include font-medium;
+    }
+
+    &__link {
+        cursor: pointer;
+        margin-left: 20px;
+        text-decoration: none;
+        color: $color-link;
+        padding:0;
+        transition: color 0.4s ease;
+
+        &__active {
+            color: $color-link-active;
+        }
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

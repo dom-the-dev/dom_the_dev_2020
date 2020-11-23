@@ -1,0 +1,14 @@
+.dom-skills {
+    .dom-skills__content {
+        width: 100%;
+    }
+
+    .dom-skills__title {
+        font-family: $font-family-robotoMono;
+        @include font-medium;
+        text-align: center;
+        font-weight: 100;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+}

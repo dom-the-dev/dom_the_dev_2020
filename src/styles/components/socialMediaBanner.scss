@@ -1,0 +1,25 @@
+.dom-social-media-banner {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+
+    .dom-social-media-banner__link a{
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+        background-color: $color-card-background;
+        padding: 5px;
+        border-radius: 50%;
+        transition: box-shadow 0.2s ease-in-out;
+
+        @include smallShadow;
+
+        &:hover {
+            @include glowShadow;
+        }
+    }
+}

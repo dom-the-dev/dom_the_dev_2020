@@ -1,0 +1,17 @@
+.dom-skillIcon {
+    background-color: $color-dark;
+    @include blurShadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    border-radius: 3px;
+    transition: box-shadow 0.4s, transform 0.4s, color 0.4s ease;
+    cursor: pointer;
+
+    &:hover {
+        @include regularShadow;
+        transform: translateY(5px);
+        color: $color-orange;
+    }
+}

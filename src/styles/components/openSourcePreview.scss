@@ -1,0 +1,38 @@
+.dom-openSourcePreview {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    &__date {
+        @include font-small;
+        color: $color-copy-decent;
+        text-align: right;
+        margin-bottom: 0;
+    }
+
+    &__linkWrapper {
+        text-align: right;
+    }
+
+    &__tag {
+        @include font-small;
+        font-family: $font-family-robotoMono;
+        padding: 2px 3px;
+        display: inline-block;
+        color: $color-copy-decent;
+        margin-right: 5px;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    
+    &__link {
+        margin-left: 10px;
+    }
+
+    &__title {
+        font-family: $font-family-robotoMono;
+    }
+}

@@ -1,0 +1,48 @@
+.dom-sectionHeadline {
+    margin: 35px 0;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $color-secondary;
+        z-index: -1;
+    }
+
+    .dom-sectionHeadline__wrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-primary;
+        padding: 0 20px;
+
+        @include media-breakpoint-up(md) {
+            margin-left: 80px;
+            display: inline-block;
+        }
+    }
+
+    .dom-sectionHeadline__title {
+        color: $color-section-headline;
+        text-transform: uppercase;
+        @include font-large;
+        @include fontWider;
+        font-weight: bold;
+        display: inline;
+        margin-right: 15px;
+        margin-bottom: 0;
+        // font-style: italic;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 24px;
+        }
+    }
+
+    .dom-sectionHeadline__subline {
+        text-transform: uppercase;
+        @include font-medium;
+        @include fontMono;
+    }
+}

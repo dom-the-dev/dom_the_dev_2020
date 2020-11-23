@@ -1,0 +1,21 @@
+body {
+    background-color: $background;
+    color: $color-copy;
+    font-size: 16px;
+    font-family: $font-family-lato;
+}
+
+.dom-page-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+a {
+    color: $color-secondary;
+    font-family: $font-family-robotoMono;
+
+    &:hover {
+        color: $color-secondary;
+    }
+}
+

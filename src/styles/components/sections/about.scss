@@ -1,0 +1,41 @@
+.dom-about {
+    .dom-about__avatar {
+        // @include regularShadow;
+        border-radius: 5px;
+        margin: 0;
+    }
+    .dom-about__headline {
+        @include h4-title;
+    }
+    .dom-about__text {
+        @include font-medium;
+        color: $color-copy;
+    }
+
+    .dom-about__imageWrapper {
+        position: relative;
+        transition: box-shadow 0.4s, transform 0.4s;
+        @include blurShadow;
+
+        &:hover {
+            @include regularShadow;
+            transform: translateY(10px) rotate(2deg);
+
+            .overlay {
+                opacity: 0.2;
+            }
+        }
+    }
+
+    .overlay {
+        background-color: $color-dark;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border-radius: 5px;
+        transition: opacity 0.3s ease;
+    }
+}

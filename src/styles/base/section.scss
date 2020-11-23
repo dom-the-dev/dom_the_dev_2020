@@ -1,0 +1,9 @@
+.dom-section {
+    display: flex;
+    align-items: center;
+
+    .dom-section__content {
+        margin: 100px auto;
+        width: 100%;
+    }
+}

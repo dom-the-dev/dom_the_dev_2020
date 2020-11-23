@@ -1,0 +1,14 @@
+.dom-card {
+    position: relative;
+    background-color: $color-dark;
+    height: 100%;
+    padding: 12px 25px;
+    border-radius: 3px;
+    transition: box-shadow 0.4s, transform 0.4s;
+    @include blurShadow;
+
+    &:hover {
+        @include regularShadow;
+        transform: translateY(5px);
+    }
+}

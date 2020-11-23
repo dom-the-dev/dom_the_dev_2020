@@ -1,0 +1,26 @@
+$color-blue: #1d2c39;
+$color-dark: #13202b;
+$color-orange: #ff610e;
+$color-headline: rgba(255, 255, 255, 0.75);
+$color-copy: rgba(255, 255, 255, 0.8);
+$color-copy-decent: rgba(255,255,255, 0.4);
+$color-white: #ffffff;
+
+$color-primary: $color-blue;
+$color-secondary: $color-orange;
+
+$background: $color-blue;
+
+// HEADER
+$background-color-header: $color-primary;
+
+// LINKS
+$color-link: $color-copy;
+$color-link-active: $color-orange;
+$color-link-hover: $color-orange;
+
+// CARD
+$color-card-background: $color-dark;
+
+// SECTION HEADLINE
+$color-section-headline: $color-secondary;

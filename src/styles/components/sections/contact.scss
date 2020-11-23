@@ -1,0 +1,32 @@
+.dom-contact {
+    .dom-form__group {
+        position: relative;
+        width: 100%;
+        color: $color-secondary;
+    }
+    
+    .dom-form__label {
+        position: absolute;
+        left: 10px;
+        top: 25px;
+        transition: transform 0.2s;
+        transform: translateY(-50%);
+    }
+    
+    .dom-form__textarea,
+    .dom-form__input {
+        border: 1px solid $color-secondary;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        padding-left: 10px;
+        width: 100%;
+        height: 50px;
+        outline: none;
+        background-color: transparent;
+    }
+    
+    .dom-form__textarea {
+        padding-top: 10px;
+        height: 250px;
+    }
+}

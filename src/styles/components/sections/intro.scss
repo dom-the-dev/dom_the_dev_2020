@@ -1,0 +1,33 @@
+.dom-intro {
+    .dom-section__content {
+
+        @include media-breakpoint-up(md) {
+            margin-top: 150px;
+        }
+    }
+    
+    .dom-intro__headline {
+        color: $color-headline;
+        @include font-big;
+    }
+
+    .dom-intro__headlinePrefix {
+        color: $color-secondary;
+        margin-bottom: 20px;
+        @include fontMono;
+    }
+
+    .dom-intro__subline {
+        text-align: right;
+        color: $color-secondary;
+        font-style: italic;
+        margin-top: -30px;
+        margin-bottom: 40px;
+        @include font-xlarge;
+    }
+
+    .dom-intro__text {
+        @include font-normal;
+        color: $color-copy;
+    }
+}

@@ -1,22 +1,52 @@
 import React from "react"
-import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import Head from "../components/head"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+import Intro from "../components/sections/Intro"
+import AboutDom from "../components/sections/AboutDom"
+import Skills from "../components/sections/Skills"
+import OpenSource from "../components/sections/OpenSource"
+import Projects from "../components/sections/Projects"
+import Contact from "../components/sections/Contact"
+
+import { graphql } from "gatsby"
+
+const IndexPage = ({ data }) => {
+  return (
+    <Layout>
+      <Head page={"Home"} />
+
+      <Intro />
+      <AboutDom />
+      <Skills />
+      <OpenSource openSource={data.allMarkdownRemark.edges} />
+      <Projects />
+      <Contact />
+    </Layout>
+  )
+}
 
 export default IndexPage
+
+export const query = graphql`
+query {
+  allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC},limit: 4, filter: {fileAbsolutePath: {regex: "/(open-source)/"  }}) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          topic
+          tags
+          github
+          demo
+          codepen
+          date
+          abstract
+        }
+      }
+    }
+  }
+}
+`
