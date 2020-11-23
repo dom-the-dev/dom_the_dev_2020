@@ -18,17 +18,21 @@ const IndexPage = ({ data }) => {
     <Layout>
       <Head page={"Home"} />
 
-      <Intro />
-      <ScrollAnimation animateIn='bounceInRight' animateOut='bounceOutLeft'>
+      <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={300}>
+        <Intro />
+      </ScrollAnimation>
+      <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={300}>
         <AboutDom />
       </ScrollAnimation>
-      <ScrollAnimation animateIn="fadeIn">
+      <ScrollAnimation animateIn="fadeIn" animateOnce={true} offset={300}>
         <Skills />
       </ScrollAnimation>
       <OpenSource openSource={data.allMarkdownRemark.edges} />
       <Projects />
-      <Contact />
-    </Layout>
+      <ScrollAnimation animateIn='fadeIn' animateOnce={true} offset={300}>
+        <Contact />
+      </ScrollAnimation>
+    </Layout >
   )
 }
 

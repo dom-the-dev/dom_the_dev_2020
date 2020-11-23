@@ -12,7 +12,7 @@ const Projects = props => {
             title={"Projects"}
             subline={"look up some of my stuff"}
         >
-            <ScrollAnimation delay={100} animateIn='fadeIn slideInUp' animateOut={'0'} duration={0.5}>
+            <ScrollAnimation delay={100} animateIn='fadeIn slideInUp' animateOut={'0'} duration={0.5} animateOnce={true}>
                 <ProjectPreview
                     isFirst={true}
                     imageLeft={true}

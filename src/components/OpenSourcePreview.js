@@ -9,7 +9,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 const OpenSourcePreview = ({ delay, project }) => {
     return (
         <div className={"col-12 col-sm-6 mb-4"}>
-            <ScrollAnimation delay={delay} animateIn='fadeIn' duration={0.5}>
+            <ScrollAnimation delay={delay} animateIn='fadeIn' duration={0.5} animateOnce={true}>
                 <Card>
                     <div className="dom-openSourcePreview">
                         <div className="dom-openSourcePreview__contentWrapper">
