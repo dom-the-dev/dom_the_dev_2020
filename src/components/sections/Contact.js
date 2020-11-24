@@ -56,7 +56,7 @@ const Contact = props => {
                     onSubmit={(e) => submitForm(e)}
                 >
                     <div className="row">
-                        <div className="col-6">
+                        <div className="col-12 col-md-6">
                             <div className="dom-form__group">
                                 <input
                                     className={`dom-form__input ${name !== '' ? 'dom-form__input--active' : ''}`}
@@ -74,7 +74,7 @@ const Contact = props => {
                             </div>
                         </div>
 
-                        <div className="col-6">
+                        <div className="col-12 col-md-6">
                             <div className="dom-form__group">
                                 <input
                                     className={`dom-form__input ${email !== '' ? 'dom-form__input--active' : ''}`}
@@ -112,8 +112,8 @@ const Contact = props => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-12">
-                            <button className="col-12" type="submit">Hit</button>
+                        <div className="col-12 text-center">
+                            <button className="dom-contact__button" type="submit">Send</button>
                         </div>
                     </div>
                 </form>

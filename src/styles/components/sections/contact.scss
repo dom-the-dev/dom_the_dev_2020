@@ -18,6 +18,9 @@
         background-color: transparent;
         color: $color-copy;
         padding-top: 9px;
+        @include fontAmatic;
+        font-weight: 900;
+        font-size: 20px;
     }
 
     .dom-form__label {
@@ -48,5 +51,19 @@
     .dom-form__input:focus + .dom-form__label {
         font-size: 10px;
         top: 10px;
+    }
+
+    .dom-contact__button {
+        background-color: $color-secondary;
+        outline: none;
+        border: 2px solid $color-secondary;
+        border-radius: 5px;
+        transition: box-shadow 0.2s, background-color 0.2s;
+
+        &:hover {
+            @include glowShadow;
+            background-color: transparent;
+            color: $color-secondary;
+        }
     }
 }

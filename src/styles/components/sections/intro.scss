@@ -22,10 +22,15 @@
     .dom-intro__subline {
         text-align: right;
         color: $color-secondary;
-        margin-top: -30px;
-        margin-bottom: 40px;
         @include font-xlarge;
         @include fontAmatic;
+        margin-top: -10px;
+        margin-bottom: 20px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: -30px;
+            margin-bottom: 40px;
+        }
     }
 
     .dom-intro__text {

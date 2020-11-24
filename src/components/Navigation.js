@@ -1,9 +1,9 @@
 import React from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
-const Navigation = props => {
+const Navigation = ({ showNav }) => {
     return (
-        <ul className={"dom-navigation"}>
+        <ul className={`dom-navigation ${showNav ? 'dom-navigation--show' : ''}`}>
             <li>
                 <AnchorLink
                     className={"dom-navigation__link"}

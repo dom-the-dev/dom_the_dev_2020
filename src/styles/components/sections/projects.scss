@@ -39,6 +39,11 @@
         @include font-medium;
         margin-bottom: 0;
         color: $color-copy;
+        padding-bottom: 50px;
+
+        @include media-breakpoint-up(md) {
+            padding-bottom: 0;
+        }
     }
 
     .dom-projects__openLink {

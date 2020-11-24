@@ -19,5 +19,46 @@
         align-items: center;
         max-width: 800px;
         margin: 0 auto;
+
+        @include media-breakpoint-down(md) {
+            padding-left: 15px;
+        }
+        
+    }
+
+
+    .dom-header__navigationToggle {
+        position: fixed;
+        right: 15px;
+        top: 20px;
+        z-index: 99;
+        outline: none;
+        border: none;
+        background-color: transparent;
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+
+        &--active {
+            .burger-1 {
+                transform: rotate(45deg) translate(3px, 6px);
+            }
+            .burger-2 {
+                opacity: 0;
+            }
+            .burger-3 {
+                transform: rotate(-45deg) translateY(-5px);
+            }
+        }
+    }
+
+    .burger {
+        width: 20px;
+        height: 2px;
+        margin-bottom: 3px; 
+        border-radius: 1px;
+        background-color: $color-white;
+        transition: transform 0.2s, opacity 0.2s;
     }
 }
