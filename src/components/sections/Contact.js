@@ -44,7 +44,7 @@ const Contact = props => {
             id="contact"
             showHeadline={true}
             title={"Contact"}
-            subline={"Feel free to hit me up"}
+            subline={"Hit me up!"}
         >
             <div className="col-12 col-md-10">
                 <div className={"dom-form-message"}>

@@ -33,7 +33,7 @@ const AboutDom = props => {
                                         Germany.
                                     </p>
                                     <p className={"dom-about__text"}>
-                                        After six beautiful years in Germanys
+                                        After six beautiful years in germany's
                                         capitol city Berlin, where i passed my
                                         web developer vocational training and
                                         started to work for{" "}

@@ -19,10 +19,10 @@ const Intro = props => {
                     <h1 className={"dom-intro__headline"}>
                         Dominik
                         <br />
-                        Amrugiewicz.
+                        Amrugiewicz
                     </h1>
                     <h2 className={"dom-intro__subline"}>
-                        But you can call me Dom.
+                        but you can call me Dom.
                     </h2>
                 </div>
 

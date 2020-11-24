@@ -25,7 +25,7 @@ const Skills = props => {
                 <div className="container">
                     <div className="row">
                         <div className="col-6 col-md-4 mt-3 mb-3">
-                            <ScrollAnimation delay={100} animateIn='fadeIn' animateOut={'0'} duration={0.5} animateOnce={true}>
+                            <ScrollAnimation delay={100} animateIn='zoomIn' animateOut={'0'} duration={0.5} animateOnce={true}>
                                 <SkillIcon>
                                     <FontAwesomeIcon
                                         icon={faJsSquare}
@@ -45,7 +45,7 @@ const Skills = props => {
                         </div>
 
                         <div className="col-6 col-md-4 mt-3 mb-3">
-                            <ScrollAnimation delay={300} animateIn='zoomIn' duration={0.5} animateOnce={true}>
+                            <ScrollAnimation delay={300} animateIn='zoomIn h-100' duration={0.5} animateOnce={true}>
                                 <SkillIcon>
                                     <FontAwesomeIcon icon={faHtml5} size={"4x"} />
                                 </SkillIcon>

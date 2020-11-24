@@ -12,6 +12,7 @@
     padding: 25px;
     list-style-type: none;
     transition: transform 0.4s;
+    @include fontAmatic;
     
     @include media-breakpoint-down(sm) {
         padding-top: 70px;
@@ -36,6 +37,8 @@
         padding: 0;
         margin: 0;
         @include font-medium;
+        @include font-large;
+        font-weight: 900;
         
         @include media-breakpoint-down(sm) {
             font-size: 22px;

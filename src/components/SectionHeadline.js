@@ -5,7 +5,7 @@ const SectionHeadline = props => {
     return (
         <div className={"dom-sectionHeadline"}>
             <div className="dom-sectionHeadline__wrapper">
-                <h3 className={"dom-sectionHeadline__title"}>{props.title}</h3> <br className={"only-mobile"}/>  
+                <h3 className={"dom-sectionHeadline__title"}>{props.title}</h3> <br className={"d-md-none"}/>  
                 <span className={"dom-sectionHeadline__subline"}>
                     {props.subline}
                 </span>
