@@ -2,6 +2,7 @@ import React from "react"
 import ProjectPreview from "../ProjectPreview"
 import Section from "../Section"
 import savethemix from "../../images/savethemix.png"
+import domthedev from "../../images/domthedev.png"
 import ScrollAnimation from 'react-animate-on-scroll';
 
 const Projects = props => {
@@ -23,14 +24,15 @@ const Projects = props => {
                     text={"Small web app to save playlists you follow as your own. This will help you to safe the playlists you love like Daily Mixes or Discover weekly by Spotify. This app is built with REACT and uses the Spotify API."}
                 />
             </ScrollAnimation>
-            {/* <ProjectPreview
+            <ProjectPreview
             isFirst={false}
             imageLeft={false}
-            image={savethemix}
-            title={"SAVETHEMIX"}
-            url={"https://www.savethemix.de"}
-            text={"A small web app to save playlists you follow as your own. This will help you to safe the playlists you love like Daily Mixes or Discover weekly by Spotify. This app is built with REACT and uses the Spotify API."}
-        /> */}
+            image={domthedev}
+            title={"Dom the Dev 2020"}
+            tags={"Gatsby / React / SASS"}
+            url={"https://github.com/dom-the-dev/dom_the_dev_2020"}
+            text={"My Personal Portfolio and my first published Project made with Gatsby. I know it's superfluous to show you my website while you are on it. So under the link you find the GitHub repository. Feel free to fork :)"}
+        />
 
         </Section>
     )
