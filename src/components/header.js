@@ -1,12 +1,30 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import logo from "../images/dom_the_dev_logo.png"
 import Navigation from "./Navigation"
 import AnchorLink from "react-anchor-link-smooth-scroll"
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Header = () => {
+
     const [showNav, setShowNav] = useState(false);
+    const [scrollPos, setScrollPos] = useState(0);
+    const [scrolled, setScrolled] = useState(true);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+    })
+
+    const handleScroll = () => {
+        if (scrollPos <= window.pageYOffset) {
+            setScrolled(false)
+        } else if (scrollPos > window.pageYOffset) {
+            setScrolled(true)
+        }
+        setScrollPos(window.pageYOffset)
+    }
+
     return (
-        <header className={"dom-header"}>
+        <header className={`dom-header ${scrolled || showNav ? 'dom-header--scrolled' : ''}`}>
             <div className="dom-header__wrapper">
                 <AnchorLink href="#start">
                     <img src={logo} alt="dom-the-dev-logo" width={30} />

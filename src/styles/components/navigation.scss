@@ -13,10 +13,14 @@
     list-style-type: none;
     transition: transform 0.4s;
     
+    @include media-breakpoint-down(sm) {
+        padding-top: 70px;
+        height: 100vh;
+    }
+
     &--show {
         @include media-breakpoint-down(sm) {
             transform: translateX(20%);
-            padding-top: 70px;
         }
     }
     

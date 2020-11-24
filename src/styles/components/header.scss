@@ -1,13 +1,18 @@
 .dom-header {
     width: 100%;
     background-color: $background-color-header;
-    padding: 15px 0;
     z-index: 1;
+    position: fixed;
+    transition: transform 0.4s ease;
+    padding: 15px 0;
+    transform: translateY(0);
 
-    @include media-breakpoint-up(md) {
-        position: fixed;
-        @include regularShadow;
-    }
+        transform: translateY(-100%);
+        
+        &--scrolled {
+            @include regularShadow;
+            transform: translateY(0);
+        }
 
     img {
         margin: 0;
@@ -35,6 +40,7 @@
         outline: none;
         border: none;
         background-color: transparent;
+        // transition: top 0.2s;
 
         @include media-breakpoint-up(md) {
             display: none;
@@ -48,7 +54,7 @@
                 opacity: 0;
             }
             .burger-3 {
-                transform: rotate(-45deg) translateY(-5px);
+                transform: rotate(-45deg) translate(1px, -4px)
             }
         }
     }
