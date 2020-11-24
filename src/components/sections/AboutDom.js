@@ -7,7 +7,7 @@ const AboutDom = props => {
         <Section
             id="about"
             title="about"
-            subline="Me, Mself and I"
+            subline="Me, Myself and I"
             showHeadline={true}
             marginBottom={150}
         >
@@ -28,7 +28,7 @@ const AboutDom = props => {
                                         Dom the dev
                                     </h4>
                                     <p className={"dom-about__text"}>
-                                        My name is Domink Amrugiewicz. I am born
+                                        My name is Domink Amrugiewicz. I was born
                                         and raised in a small town in southern
                                         Germany.
                                     </p>
@@ -47,9 +47,9 @@ const AboutDom = props => {
                                         agency i moved back to my hometown.
                                     </p>
                                     <p className={"dom-about__text"}>
-                                        Today i am still working as a web
-                                        developer in full time. When i find some
-                                        time, i like to work on open source
+                                        Today I'm still working as full time a web
+                                        developer. When I find some
+                                        time, I like to work on open source
                                         projects and always try to learn more
                                         about all kinds of JavaScript.
                                     </p>
