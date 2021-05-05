@@ -3,6 +3,10 @@
         width: 100%;
     }
 
+    .dom-skillIcon {
+        cursor: crosshair;
+    }
+
     .dom-skills__title {
         font-family: $font-family-robotoMono;
         @include font-medium;

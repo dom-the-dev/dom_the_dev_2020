@@ -17,7 +17,7 @@ export default OpenSource
 
 export const query = graphql`
 query {
-  allMarkdownRemark(limit: 4) {
+  allMarkdownRemark {
     edges {
       node {
         id

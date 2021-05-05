@@ -6,7 +6,10 @@ import { Link } from "gatsby"
 
 const Header = () => {
 
-    let onIndex = window.location.pathname === '/';
+    let onIndex = true;
+    if (typeof window !== `undefined`) {
+        onIndex = window.location.pathname === '/';
+    }
 
     const [showNav, setShowNav] = useState(false);
     const [scrollPos, setScrollPos] = useState(0);
