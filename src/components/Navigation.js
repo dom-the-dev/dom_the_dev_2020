@@ -35,16 +35,16 @@ const Navigation = ({ showNav, onIndex }) => {
                     : <Link className={"dom-navigation__link"} to={"/#dom-openSource"}>Open Source</Link>
                 }
             </li>
-            <li>
-                {onIndex ? <AnchorLink
-                    className={"dom-navigation__link"}
-                    href="#dom-projects"
-                >
-                    Projects
-                </AnchorLink>
-                    : <Link className={"dom-navigation__link"} to={"/#dom-projects"}>Projects</Link>
-                }
-            </li>
+            {/*<li>*/}
+            {/*    {onIndex ? <AnchorLink*/}
+            {/*        className={"dom-navigation__link"}*/}
+            {/*        href="#dom-projects"*/}
+            {/*    >*/}
+            {/*        Projects*/}
+            {/*    </AnchorLink>*/}
+            {/*        : <Link className={"dom-navigation__link"} to={"/#dom-projects"}>Projects</Link>*/}
+            {/*    }*/}
+            {/*</li>*/}
             <li>
                 {onIndex ? <AnchorLink
                     className={"dom-navigation__link"}

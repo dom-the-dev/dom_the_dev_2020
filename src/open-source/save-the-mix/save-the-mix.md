@@ -1,6 +1,6 @@
 ---
 title: "SAVE THE MIX!"
-date: "2021-01-10"
+date: "2021-01-01"
 topic: react
 abstract: "Web App to save Spotify Playlists with one click!"
 github: "https://github.com/dom-the-dev/save-the-mix"
